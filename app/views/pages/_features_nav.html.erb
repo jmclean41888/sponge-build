@@ -1,17 +1,30 @@
 <nav id="features-nav">
 		
-	<%= link_to image_tag("Features_Nav/Video_Off.jpg"), video_path, :id => "video" %>
-			
-	<%= link_to image_tag("Features_Nav/Maps_Off.jpg"), maps_path, :id => "maps" %>	
-	
-	<%= link_to image_tag("Features_Nav/Coupons_Off.jpg"), coupons_path, :id => "coupons" %>
+			<a id="video" href="video" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('video_icon','','/images/Features_Nav/Video_Over.jpg',1)">
+				<img src="/images/Features_Nav/Video_Off.jpg" alt="Build Your Ad" width="53" height="90" border="0" id="video_icon"/>
+			</a>
 		
-	<%= link_to image_tag("Features_Nav/Feeds_Off.jpg"), social_media_path, :id => "feeds" %>
-	
-	<%= link_to image_tag("Features_Nav/Galleries_Off.jpg"), galleries_path, :id => "galleries" %>
-	
-	<%= link_to image_tag("Features_Nav/LeadGen_Off.jpg"), lead_generation_path, :id => "leadgen" %>
-	
-</nav>
+			<a id="maps" href="maps" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('maps_icon','','/images/Features_Nav/Maps_Over.jpg',1)">
+				<img src="/images/Features_Nav/Maps_Off.jpg" alt="Build Your Ad" width="53" height="90" border="0" id="maps_icon" />
+			</a>
+			
+			<a id="feeds" href="social_media" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('feeds_icon','','/images/Features_Nav/Feeds_Over.jpg',1)">
+				<img src="/images/Features_Nav/Feeds_Off.jpg" alt="Build Your Ad" width="110" height="87" border="0" id="feeds_icon" />
+			</a>
+		
+			<a id="coupons" href="coupons" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('coupons_icon','','/images/Features_Nav/Coupons_Over.jpg',1)">
+				<img src="/images/Features_Nav/Coupons_Off.jpg" alt="Build Your Ad" width="76" height="89" border="0" id="coupons_icon" />
+			</a>
+		
+			<a id="galleries" href="galleries" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('galleries_icon','','/images/Features_Nav/Galleries_Over.jpg',1)">
+				<img src="/images/Features_Nav/Galleries_Off.jpg" alt="Build Your Ad" width="80" height="86" border="0" id="galleries_icon" />
+			</a>
+		
+			<a id="leadgen" href="lead_generation" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('leadgen_icon','','/images/Features_Nav/LeadGen_Over.jpg',1)">
+				<img src="/images/Features_Nav/LeadGen_Off.jpg" alt="Build Your Ad" width="85" height="87" border="0" id="leadgen_icon"/>
+			</a>
+		
+		</nav>
+
 	
 <div id="dotrule"></div>

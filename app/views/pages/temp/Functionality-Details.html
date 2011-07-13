@@ -1,0 +1,543 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Build Dot Spongecell | Functionality Details</title>
+
+<!--image load and rollover js-->
+<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+ 	 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<!--css - export to linked doc later-->
+<style type="text/css">
+
+@font-face {
+	font-family: kievit;
+	src: url('kievit_bold.otf');
+}
+
+body {
+	background-color: #fafafa;
+	background-image: url(images/bggrad.jpg);
+	background-repeat: repeat-x;
+	margin: auto auto;
+	height: 100%;
+}
+
+#header {
+	position: absolute;
+	margin: 0 0;
+	top: 0;
+	width: 100%;
+	height: 13px;
+	background-color: #c2d1e4;
+	}
+	
+#colorbar {
+	position: absolute;
+	margin: 0 0;
+	top: 0;
+	right: 0;
+	width: 154px;
+	height: 13px;
+	background-image: url(images/colorbar.jpg);
+	}
+
+#panelwrapper {
+	position: relative;
+	margin: 0 auto;
+	top: 13px;
+	width: 1124px;
+	height: 100%;
+	background-color: #FFF;
+}
+
+
+#panel {
+	position: relative;
+	margin: 0 auto;
+	top: 13px;
+	width: 1024px;
+	height: 100%;
+	background-color: #FFF;
+}
+
+#logo {
+	position: absolute;
+	top: 47px;
+	left: 0;
+	height: 54px;
+	width: 303px;
+	background-image: url(images/logo.png);
+	}
+
+#main-nav {
+	position: absolute;
+	top: 97px;
+	left: 328px;
+	}
+
+#main-nav a {
+	padding: 0;
+	}
+	
+#features-nav {
+	position: absolute;
+	top: 200px;
+	left: 62px;
+	width: 900px;
+	height: 92px;
+	}
+	
+#video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	
+#maps {
+	position: absolute;
+	top: 0;
+	left: 170px;
+	}
+
+#feeds {
+	position: absolute;
+	top: 0;
+	left: 310px;
+	}
+
+#coupons {
+	position: absolute;
+	top: 0;
+	left: 495px;
+	}
+
+#galleries {
+	position: absolute;
+	top: 0;
+	left: 665px;
+	}
+
+#leadgen {
+	position: absolute;
+	top: 0;
+	left: 820px;
+	}
+
+#dotrule {
+	position: absolute;
+	width: 889px;
+	height: 3px;
+	top: 305px;
+	left: 67px;
+	background-image: url(images/Dotted-Rule_Horiz.jpg);
+	}
+	
+#content {
+	position: absolute;
+	width: 784px;
+	height: 300px;
+	top: 400px;
+	left: 120px;
+	}
+
+#content ul {
+	font-size: 20pt;
+	font-family: kievit;
+	line-height:1;
+	position:absolute;
+	color: #666
+	}
+
+.feature-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+#videotitle {
+	background-image: url(images/Video_Title.jpg);
+	width: 273px;
+	height: 67px;
+	}
+
+#bullets {
+	position: absolute;
+	top: 65px;
+	left: -10px;
+	width: 300px;
+	}
+	
+#gallerylink {
+	position: absolute;
+	top: 175px;
+	left: 30px;
+	}
+
+#gallerylink a {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 15pt;
+	color: #2869a4;
+	}
+	
+#demoads {
+	position: absolute;
+	width: 451px;
+	height: 296px;
+	left: 400px;
+	}
+
+#adloader {
+	position:absolute;
+	width: 300px;
+	height: 250px;
+	background-color: #666;
+	}
+	
+#addeets {
+	position: relative;
+	top: 260px;
+	left: 10px;
+	width: 250px;
+	height: 45px;
+	}
+
+.adtitle {
+	font-family: kievit;
+	font-size: 20pt;
+	text-transform: uppercase;
+	color: #666;
+	}
+
+#addeets nav {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 10pt;
+	color: #2869a4;
+	}
+
+
+#thumbs {
+	position: absolute;
+	top: 0;
+	left: 320px;
+	}
+
+.thumb {
+	width: 55px;
+	height: 50px;
+	background-color: #666;
+	}
+	
+#thumb1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	}
+	
+#thumb2 {
+	position: absolute;
+	top: 66px;
+	left: 0px;
+	}
+	
+#thumb3 {
+	position: absolute;
+	top: 132px;
+	left: 0px;
+	}
+	
+#thumb4 {
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	}
+	
+.roundbox {
+	position: absolute;
+	top: 735px;
+	left: 62px;
+	width: 900px;
+	height: 200px;
+	background-color: #c2d1e4;
+	border-radius: 7px;
+	}
+
+#knowicon {
+	position: relative;
+	top: 25px;
+	left: 20px;
+	width: 27px;
+	height: 31px;
+	background-image: url(images/icons/Know_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+#besticon {
+	position: relative;
+	top: -5px;
+	left: 320px;
+	width: 31px;
+	height: 29px;
+	background-image: url(images/icons/Best_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+#assetsicon {
+	position: relative;
+	top: -41px;
+	left: 630px;
+	width: 29px;
+	height: 36px;
+	background-image: url(images/icons/Assets_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+.headline {
+	position: absolute;
+	font-family: kievit;
+	font-size: 15pt;
+	color: #666;
+	top: 30px;
+	}
+	
+#know {
+	left: 60px;
+	}
+	
+#best {
+	left: 370px;
+	}
+	
+#need {
+	left: 675px;
+	}
+
+.bulletbox {
+	position: absolute;
+	top: 65px;
+	width: 250px;
+	font-family: georgia;
+	font-style: italic;
+	font-size: 10pt;
+	line-height: 18px;
+	color: #666666;
+	}
+
+#bulletbox1 {
+	left: 25px;
+	}
+	
+#bulletbox2 {
+	left: 325px;
+	}
+	
+#bulletbox3 {
+	left: 625px;
+	}
+
+
+#footer {
+	position: relative;
+	margin: 0 auto;
+	bottom: 0;
+	height: 45px;
+	width: 1024px;
+	background-color: #FF0000;
+	z-index: 2;
+	clear: both;
+	}
+	
+#copyright {
+	position: relative;
+	top: 15px;
+	left: 325px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 8pt;
+	color: #ccc;
+	z-index: 3;
+	}
+
+</style>
+
+
+</head>
+
+<body onload="MM_preloadImages('images/Features_Nav/Coupons_Over.jpg')">
+
+  	<div id="header">
+		<div id="colorbar">
+		</div>
+	</div>
+
+	<div id="panelwrapper">
+	<div id="panel">	
+	
+			<div style="position: absolute; height: 2px; width: 1124px; background-color: #ccc; top: 147px; left:-50px;"></div>
+
+	
+		<div id="logo"></div>
+		
+		<nav id="main-nav">
+			<!--Build Your Ad-->
+			<a href="Resize.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Build','','images/Build_Nav/Build_Over.jpg',1)"><img src="images/Build_Nav/Build_Off.jpg" alt="Build Your Ad" name="Build" width="182" height="52" border="0" id="Build" /></a>
+			<!--<a href="#" ><img src="images/Build_Nav/Build_Over.jpg" alt="Build Your Ad" width="182" height="52" border="0" /></a>-->
+			<!--Functionality Details-->
+			<!--<a href="Functionality-Details.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Func','','images/Build_Nav/Func_Over.jpg',1)"><img src="images/Build_Nav/Func_Off.jpg" alt="Functionality Details" name="Func" width="271" height="52" border="0" id="Func" /></a>-->
+			<a href="#" ><img src="images/Build_Nav/Func_Over.jpg" alt="Functionality Details" width="271" height="52" border="0" /></a>
+			<!--Get Your Ad Live-->
+			<a href="3rd-Party.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Live','','images/Build_Nav/Live_Over.jpg',1)"><img src="images/Build_Nav/Live_Off.jpg" alt="Get Your Ad Live" name="Live" width="207" height="52" border="0" id="Live" /></a>
+			<!--<a href="#" ><img src="images/Build_Nav/Live_Over.jpg" alt="Get Your Ad Live" width="207" height="52" border="0" /></a>-->
+		</nav>
+				
+		<nav id="features-nav">
+		
+			<a id="video" href="#">
+				<img src="images/Features_Nav/Video_Over.jpg" alt="Build Your Ad" width="53" height="90" border="0" />
+			</a>
+		
+			<a id="maps" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('maps_icon','','images/Features_Nav/Maps_Over.jpg',1)">
+				<img src="images/Features_Nav/Maps_Off.jpg" alt="Build Your Ad" width="53" height="90" border="0" id="maps_icon" />
+			</a>
+			
+			<a id="feeds" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('feeds_icon','','images/Features_Nav/Feeds_Over.jpg',1)">
+				<img src="images/Features_Nav/Feeds_Off.jpg" alt="Build Your Ad" width="110" height="87" border="0" id="feeds_icon" />
+			</a>
+		
+			<a id="coupons" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('coupons_icon','','images/Features_Nav/Coupons_Over.jpg',1)">
+				<img src="images/Features_Nav/Coupons_Off.jpg" alt="Build Your Ad" width="76" height="89" border="0" id="coupons_icon" />
+			</a>
+		
+			<a id="galleries" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('galleries_icon','','images/Features_Nav/Galleries_Over.jpg',1)">
+				<img src="images/Features_Nav/Galleries_Off.jpg" alt="Build Your Ad" width="80" height="86" border="0" id="galleries_icon" />
+			</a>
+		
+			<a id="leadgen" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('leadgen_icon','','images/Features_Nav/LeadGen_Over.jpg',1)">
+				<img src="images/Features_Nav/LeadGen_Off.jpg" alt="Build Your Ad" width="85" height="87" border="0" id="leadgen_icon"/>
+			</a>
+		
+		</nav>
+	
+		<div id="dotrule"></div>
+
+		<div id="content">
+			<div class="feature-title" id="videotitle">
+			</div>
+			
+			<div id="bullets">
+				<ul>
+					<li>bullet one</li>
+					<li>bullet one</li>
+					<li>bullet one</li>
+				</ul>
+			</div>
+			<div id="gallerylink">
+				<a href="#" target="new">see more in our gallery »</a>
+			</div>
+
+		<div id="demoads">
+			<div id="adloader">
+			</div>
+			
+			<div id="addeets">
+				<div class="adtitle">
+					Title of Banner
+				</div>
+				<nav>
+					<a href="#">300x250</a> •
+					<a href="#">300x250</a>
+				</nav>
+			</div>
+			
+			<nav id="thumbs">
+				<div class="thumb" id="thumb1"></div>
+				<div class="thumb" id="thumb2"></div>
+				<div class="thumb" id="thumb3"></div>
+				<div class="thumb" id="thumb4"></div>
+			</nav>
+			
+		</div>
+
+		</div>
+	
+		<div class="roundbox">
+		
+			<div id="knowicon"></div>
+			<div id="besticon"></div>
+			<div id="assetsicon"></div>
+			
+		<div class="headline" id="know">
+		NEED TO KNOW
+		</div>
+		
+		<div class="headline" id="best">
+		BEST PRACTICES
+		</div>
+		
+		<div class="headline" id="need">
+		WHAT WE NEED
+		</div>
+		
+		<div class="bulletbox" id="bulletbox1">
+			<ul>
+				<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+		
+		<div class="bulletbox" id="bulletbox2">
+			<ul>
+				<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+		
+		<div class="bulletbox" id="bulletbox3">
+			<ul>
+				<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+		
+		</div>
+		
+		
+	<!--<div id="footer">
+		<div style="position: relative; margin: 0 auto -45 auto; height: 2px; width: 1024px; background-color: #00FF00; bottom: 0px;"></div>
+		<div id="copyright">
+			&copy; 2011 Spongecell, LLC | 261 Madison Avenue, New York, NY 10016 | 212.220.8995 | contact@spongecell.com
+		</div>
+	</div>-->
+		
+	</div>
+	</div>
+
+
+	
+</body>
+</html>

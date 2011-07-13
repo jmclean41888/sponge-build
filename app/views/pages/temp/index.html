@@ -1,0 +1,419 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Build Dot Spongecell | Functionality Details</title>
+
+<!--image load and rollover js-->
+<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+ 	 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<!--css - export to linked doc later-->
+<style type="text/css">
+
+			@font-face {
+	font-family: kievit;
+	src: url('kievit_bold.otf');
+}
+
+body {
+	background-color: #fafafa;
+	background-image: url(images/bggrad.jpg);
+	background-repeat: repeat-x;
+	margin: auto auto;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	}
+
+#headerbar {
+	position: absolute;
+	margin: 0 0;
+	top: 0;
+	width: 100%;
+	height: 13px;
+	background-color: #c2d1e4;
+	}
+	
+#header {
+	position: absolute;
+	margin: 0 0;
+	top: 0;
+	width: 100%;
+	height: 147px;
+	background-color: #fff;
+	z-index: 2;
+	}
+	
+#colorbar {
+	position: absolute;
+	margin: 0 0;
+	top: 0;
+	right: 0;
+	width: 154px;
+	height: 13px;
+	background-image: url(images/colorbar.jpg);
+	}
+
+#panelwrapper {
+	position: relative;
+	margin: 0 auto;
+	top: 13px;
+	width: 1124px;
+	height: 100%;
+	background-color: #FFF;
+	background-image: url(images/index/balls.png);
+	background-repeat: no-repeat;
+
+}
+
+
+#panel {
+	position: relative;
+	margin: 0 auto;
+	top: 13px;
+	width: 1024px;
+	height: 100%;
+}
+
+
+#logo {
+	position: absolute;
+	top: 47px;
+	left: 0;
+	height: 54px;
+	width: 303px;
+	background-image: url(images/logo.png);
+	z-index:2;
+	}
+
+#main-nav {
+	position: absolute;
+	top: 97px;
+	left: 328px;
+	z-index:2;
+	}
+
+#main-nav a {
+	padding: 0;
+	}
+
+
+#dotrule {
+	position: absolute;
+	width: 422px;
+	height: 4px;
+	top: 405px;
+	left: 53px;
+	background-image: url(images/index/dotrule.png);
+	z-index: 99;
+	}
+	
+#content {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 315px;
+	left: 50px;
+	}
+
+
+#welcometitle {
+	position: absolute;
+	background-image: url(images/index/welcome.png);
+	width: 430px;
+	height: 70px;
+	z-index:2;
+	}
+	
+#bodycopy {
+	position: relative;
+	top: 100px;
+	left: 10px;
+	width: 400px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 13pt;
+	color: #666;
+	z-index:2;
+	}
+	
+#getstartedlink {
+	position: absolute;
+	top: 220px;
+	left: 10px;
+	z-index:2;
+	}
+
+#getstartedlink a {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 15pt;
+	color: #2869a4;
+	}
+
+	
+.roundbox {
+	position: absolute;
+	top: 735px;
+	left: 62px;
+	width: 900px;
+	height: 225px;
+	background-color: #c2d1e4;
+	border-radius: 7px;
+	z-index:2;
+	}
+	
+.roundtext {
+	position: absolute;
+	top: 60px;
+	width: 250px;
+	font-family: georgia;
+	font-style: italic;
+	}
+
+.roundtext p {
+	font-size: 11pt;
+	color: #666;
+	}
+
+.roundbox a {
+	font-size: 13pt;
+	color: #2869a4;
+	text-decoration: none;
+	}
+	
+#buildbox {
+	left: 25px;
+	}
+
+#funkybox {
+	left: 325px;
+	}
+
+#livingbox {
+	left: 635px;
+	}
+	
+#buildlink {
+	position: absolute;
+	top: 115px;
+	}
+
+#funkylink {
+	position: absolute;
+	top: 115px;
+	}
+
+#livinglink {
+	position: absolute;
+	top: 115px;
+	}
+
+#knowicon {
+	position: relative;
+	top: 25px;
+	left: 20px;
+	width: 27px;
+	height: 31px;
+	background-image: url(images/icons/Know_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+#besticon {
+	position: relative;
+	top: -5px;
+	left: 320px;
+	width: 31px;
+	height: 29px;
+	background-image: url(images/icons/Best_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+#assetsicon {
+	position: relative;
+	top: -41px;
+	left: 630px;
+	width: 29px;
+	height: 36px;
+	background-image: url(images/icons/Assets_Icon.png);
+	background-repeat: no-repeat;
+	}
+	
+.headline {
+	position: absolute;
+	font-family: kievit;
+	font-size: 15pt;
+	color: #666;
+	top: 30px;
+	}
+	
+#know {
+	left: 60px;
+	}
+	
+#best {
+	left: 365px;
+	}
+	
+#need {
+	left: 675px;
+	}
+
+
+
+#footer {
+	visibility: hidden;
+	position: relative;
+	margin: 0 auto;
+	bottom: 0;
+	height: 45px;
+	width: 1024px;
+	background-color: #FF0000;
+	z-index: 2;
+	clear: both;
+	}
+	
+#copyright {
+	position: relative;
+	top: 15px;
+	left: 325px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 8pt;
+	color: #ccc;
+	z-index: 3;
+	}
+
+</style>
+
+
+</head>
+
+<body onload="MM_preloadImages('images/Features_Nav/Coupons_Over.jpg')">
+
+  	<div id="headerbar">
+		<div id="colorbar">
+		</div>
+	</div>
+
+	<div id="panelwrapper">
+	<div id="panel">
+	
+		<div id="header"></div>
+			<div style="position: absolute; height: 2px; width: 1124px; background-color: #ccc; top: 147px; left:-50px;"></div>
+
+	
+		<a href="index.html"><div id="logo"></div></a>
+		
+		<nav id="main-nav">
+			<!--Build Your Ad-->
+			<a href="Resize.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Build','','images/Build_Nav/Build_Over.jpg',1)"><img src="images/Build_Nav/Build_Off.jpg" alt="Build Your Ad" name="Build" width="182" height="52" border="0" id="Build" /></a>
+			<!--<a href="#" ><img src="images/Build_Nav/Build_Over.jpg" alt="Build Your Ad" width="182" height="52" border="0" /></a>-->
+			<!--Functionality Details-->
+			<a href="Functionality-Details.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Func','','images/Build_Nav/Func_Over.jpg',1)"><img src="images/Build_Nav/Func_Off.jpg" alt="Functionality Details" name="Func" width="271" height="52" border="0" id="Func" /></a>
+			<!--<a href="#" ><img src="images/Build_Nav/Func_Over.jpg" alt="Functionality Details" width="271" height="52" border="0" /></a>-->
+			<!--Get Your Ad Live-->
+			<a href="3rd-Party.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Live','','images/Build_Nav/Live_Over.jpg',1)"><img src="images/Build_Nav/Live_Off.jpg" alt="Get Your Ad Live" name="Live" width="207" height="52" border="0" id="Live" /></a>
+			<!--<a href="#" ><img src="images/Build_Nav/Live_Over.jpg" alt="Get Your Ad Live" width="207" height="52" border="0" /></a>-->
+		</nav>
+				
+				<div id="dotrule"></div>
+
+
+		<div id="content">
+			<div id="welcometitle">
+			</div>
+			
+			
+			<div id="bodycopy">
+				<p>
+We’re happy you’re here! This site is your resource for all things Spongecell. Use the tabs above to find helpful resources that will make executing your Spongecell 
+campaign a magical and pleasant experience. 
+				</p>
+			</div>
+			
+			<div id="getstartedlink">
+				<a href="#">get started here »</a>
+			</div>
+
+
+		</div>
+	
+		<div class="roundbox">
+		
+			<div id="knowicon"></div>
+			<div id="besticon"></div>
+			<div id="assetsicon"></div>
+			
+		<div class="headline" id="know">
+		BUILD YOUR AD
+		</div>
+		
+		<div class="headline" id="best">
+		FUNCTIONALITY DETAILS
+		</div>
+		
+		<div class="headline" id="need">
+		GET YOUR AD LIVE
+		</div>
+		
+		<div class="roundtext" id="buildbox">
+			<p>
+				Want us to build you an ad? Got some creative? Got nothing at all? Click here to find out how we can help you put your ad together.
+			</p>
+			<div id="buildlink">
+				<a href="Resize.html">take me there »</a>
+			</div>
+		</div>
+
+		<div class="roundtext" id="funkybox">
+			<p>
+				We do a lot of cool stuff. Check out all our awesome functionality and find out what we need from you to build it.			
+			</p>
+			<div id="funkylink">
+				<a href="Functionality-Details.html">take me there »</a>
+			</div>
+			
+		</div>
+
+		<div class="roundtext" id="livingbox">
+			<p>
+				Ready to traffic out that beautiful Spongecell banner? Clueless about how to start? Click here to learn all the ins and outs of the Spongecell trafficking process!
+			</p>
+			<div id="livinglink">
+				<a href="3rd-Party.html">take me there »</a>
+			</div>
+		</div>
+
+		
+		</div>
+		
+		
+	</div>
+	</div>
+
+
+	
+</body>
+</html>

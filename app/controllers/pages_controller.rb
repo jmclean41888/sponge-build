@@ -18,6 +18,14 @@ class PagesController < ApplicationController
   def social_media
     @current_page_category = :feature
   end
+
+  def maps
+    @current_page_category = :feature
+  end
+  
+  def galleries
+    @current_page_category = :feature
+  end
   
   def resize
   	@current_page_category = :build

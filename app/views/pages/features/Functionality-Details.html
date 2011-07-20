@@ -1,0 +1,229 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Build Dot Spongecell | Functionality Details</title>
+
+<!--image load and rollover js-->
+<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+ 	 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<LINK href="default.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onload="MM_preloadImages('images/Features_Nav/Coupons_Over.jpg')">
+
+  	<div id="header">
+		<div id="colorbar">
+		</div>
+	</div>
+
+<div id="wrapper">
+
+	<div id="logo"></div>
+	<div id="top-nav">
+		<a href="http://www.spongecell.com">HOME</a>&nbsp;
+		<a href="http://gallery.spongecell.com">GALLERY</a>&nbsp;
+		<a href="http://www.spongecell.com/about">ABOUT</a>&nbsp;
+		<a class="selected" href="index.html">BUILD</a>&nbsp;
+		<a href="http://www.spongecell.com/contact.html">CONNECT</a>
+	</div>
+	
+	<div id="main-nav">
+	
+			<!--Build Your Ad-->
+			<a href="Resize.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Build','','images/Build_Nav/Build_Over.jpg',1)">
+				<img src="images/Build_Nav/Build_Off.jpg" alt="Build Your Ad" name="Build" id="Build" />
+			</a>
+			
+			<!--Functionality Details-->
+			<a href="Functionality-Details.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Func','','images/Build_Nav/Func_Over.jpg',1)">
+				<img src="images/Build_Nav/Func_Off.jpg" alt="Functionality Details" name="Func" id="Func" />
+			</a>
+			
+			<!--Get Your Ad Live-->
+			<a href="3rd-Party.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Live','','images/Build_Nav/Live_Over.jpg',1)">
+				<img src="images/Build_Nav/Live_Off.jpg" alt="Get Your Ad Live" name="Live" id="Live" />
+			</a>	
+	</div>
+	
+	<!--horizontal rule-->
+	<div style="position: relative; margin: auto; height: 2px; 
+	width: 1024px; background-color: #ccc; top: 113px; left:-50px;"></div>
+	
+					
+	<nav id="content-nav">
+		
+			<a 	id="video" 
+				href="#" 
+				class="icon">
+				<img src="images/Features_Nav/Video_Off.jpg" />
+			</a>
+		
+			<a 	id="maps" 
+				href="#" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('maps_icon','','images/Features_Nav/Maps_Off.jpg',1)" 
+				class="icon">
+				<img src="images/Features_Nav/Maps_Off.jpg" id="maps_icon" />
+			</a>
+			
+			<a 	id="feeds" 
+				href="#" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('feeds_icon','','images/Features_Nav/Feeds_Off.jpg',1)" 
+				class="icon">
+				<img src="images/Features_Nav/Feeds_Off.jpg" id="feeds_icon" />
+			</a>
+		
+			<a 	id="coupons" 
+				href="#" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('coupons_icon','','images/Features_Nav/Coupons_Off.jpg',1)" 
+				class="icon">
+				<img src="images/Features_Nav/Coupons_Off.jpg" id="coupons_icon" />
+			</a>
+		
+			<a 	id="galleries" 
+				href="#" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('galleries_icon','','images/Features_Nav/Galleries_Off.jpg',1)" 
+				class="icon">
+				<img src="images/Features_Nav/Galleries_Off.jpg" id="galleries_icon" />
+			</a>
+		
+			<a 	id="leadgen" 
+				href="#" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('leadgen_icon','','images/Features_Nav/LeadGen_Off.jpg',1)" 
+				class="icon">
+				<img src="images/Features_Nav/LeadGen_Off.jpg" id="leadgen_icon"/>
+			</a>
+		
+	</nav>
+	
+	<div id="dotrule"></div>
+
+	<div id="content">
+			
+		<div id="feature_content_left_box" style="float:left; width:400px;">
+			<div class="feature-title" id="videotitle"></div>
+			
+			<h1 style="font-family: kievitbol; font-size: 60px; color: #666666; margin:0px;">VIDEO</h1>
+			
+			<div id="bullets">
+				<ul>
+					<li>bullet one</li>
+					<li>bullet one</li>
+					<li>bullet one</li>
+				</ul>
+			</div>
+			<div id="gallerylink">
+				<a href="#" target="new">see more in our gallery »</a>
+			</div>
+		</div>
+		
+		<div id="feature_content_right_box" style="float:right">
+		<div id="demoads">
+		
+			<div id="adloader">
+			</div>
+			
+			<div id="ad_image_wrapper" style="width:400px;">
+				<!--placeholder-->
+				<div id="ad_box" style="width:300px; height:250px; background-color:#cccccc; float:left;">
+				</div>
+				<nav id="thumbs">
+					<div class="thumb" id="thumb1"></div>
+					<div class="thumb" id="thumb2"></div>
+					<div class="thumb" id="thumb3"></div>
+					<div class="thumb" id="thumb4"></div>
+				</nav>
+			</div>
+				<!--end placeholder-->
+			<div class="ad_title">
+					<h3>Title of Banner</h3>
+					<a href="#">300x250</a> •
+					<a href="#">300x250</a>
+			</div>
+		</div><!--end demo ads-->
+		</div><!--end box-->
+	</div><!--end content-->
+	
+	<div class="roundbox">
+		
+		<div class="roundbox_icon"><img src="images/icons/Know_Icon.png" /></div>
+		<div class="headline" id="know">
+			NEED TO KNOW
+		</div>
+		
+		<div class="roundbox_icon"><img src="images/icons/Best_Icon.png" /></div>
+		<div class="headline" id="best">
+			BEST PRACTICES
+		</div>
+		
+		<div class="roundbox_icon"><img src="images/icons/Assets_Icon.png" /></div>
+		<div class="headline" id="need">
+			WHAT WE NEED
+		</div>
+		
+		<div class="bulletbox" id="bulletbox1" style="clear:both;">
+			<ul>
+				<li>1At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+		
+		<div class="bulletbox" id="bulletbox2">
+			<ul>
+				<li>2At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+		
+		<div class="bulletbox" id="bulletbox3">
+			<ul>
+				<li>3At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
+				<li>ditiis praesentium voluptatu</li>
+				<li>deleniti atque corrupti quos res</li>
+			</ul>
+		</div>
+	</div><!--end roundbox-->
+</div><!--end wrapper-->
+
+	<div id="footer">
+		blah blah blah footer footer blah
+	</div>
+	
+	
+</body>
+</html>

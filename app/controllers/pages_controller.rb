@@ -18,5 +18,9 @@ class PagesController < ApplicationController
   def social_media
     @category = :feature
   end
+  
+  def resize
+  	@current_page_category = "build"
+  end
 
 end

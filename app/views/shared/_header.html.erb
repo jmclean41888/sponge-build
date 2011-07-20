@@ -1,0 +1,24 @@
+	<div id="logo"></div>
+	<div id="top-nav">
+		<a href="http://www.spongecell.com">HOME</a>&nbsp;
+		<a href="http://gallery.spongecell.com">GALLERY</a>&nbsp;
+		<a href="http://www.spongecell.com/about">ABOUT</a>&nbsp;
+		<a class="selected" href="index.html">BUILD</a>&nbsp;
+		<a href="http://www.spongecell.com/contact.html">CONNECT</a>
+	</div>
+	
+	<div id="main-nav">
+	
+		<% if @current_page_category = "build" %>
+			<%= link_to image_tag("Build_Nav/Build_Over.jpg"), '#', :id => "build" %>
+		<% else %>
+			<%= link_to image_tag("Build_Nav/Build_Off.jpg"), '#', :id => "build" %>
+		<% end %>
+		
+		<%= link_to image_tag("Build_Nav/Func_Off.jpg"), '#', :id => "build" %>
+		<%= link_to image_tag("Build_Nav/Live_Off.jpg"), '#', :id => "build" %>
+	</div>
+	
+	<!--horizontal rule-->
+	<div style="position: relative; margin: auto; height: 2px; 
+	width: 1024px; background-color: #ccc; top: 113px; left:-50px;"></div>

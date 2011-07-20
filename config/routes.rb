@@ -7,6 +7,7 @@ SpongeBuild::Application.routes.draw do
   get "pages/galleries"
   get "pages/lead_generation"
   get "pages/index"
+  get "pages/resize"
   
   match '/video', :to => 'pages#video'
   match '/maps', :to => 'pages#maps'

@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<LINK href="default.css" rel="stylesheet" type="text/css">
+<title>Build Dot Spongecell | Functionality Details</title>
+
+<!--image load and rollover js-->
+<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+ 	 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+
+<body onload="MM_preloadImages('images/Features_Nav/Coupons_Over.jpg')">
+	
+
+<div id="header">
+	<div id="colorbar"></div>
+</div>
+
+<div id="wrapper">
+	<div id="logo"></div>
+	<div id="top-nav">
+		<a href="http://www.spongecell.com">HOME</a>&nbsp;
+		<a href="http://gallery.spongecell.com">GALLERY</a>&nbsp;
+		<a href="http://www.spongecell.com/about">ABOUT</a>&nbsp;
+		<a class="selected" href="index.html">BUILD</a>&nbsp;
+		<a href="http://www.spongecell.com/contact.html">CONNECT</a>
+	</div>
+	
+	<div id="main-nav">
+	
+			<!--Build Your Ad-->
+			<a href="Resize.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Build','','images/Build_Nav/Build_Over.jpg',1)">
+				<img src="images/Build_Nav/Build_Off.jpg" alt="Build Your Ad" name="Build" border="0" id="Build" />
+			</a>
+			
+			<!--Functionality Details-->
+			<a href="Functionality-Details.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Func','','images/Build_Nav/Func_Over.jpg',1)">
+				<img src="images/Build_Nav/Func_Off.jpg" alt="Functionality Details" name="Func" id="Func" />
+			</a>
+			
+			<!--Get Your Ad Live-->
+			<a href="3rd-Party.html" 
+				onmouseout="MM_swapImgRestore()" 
+				onmouseover="MM_swapImage('Live','','images/Build_Nav/Live_Over.jpg',1)">
+				<img src="images/Build_Nav/Live_Off.jpg" alt="Get Your Ad Live" name="Live" border="0" id="Live" />
+			</a>	
+	</div>
+	
+	<!--horizontal rule-->
+	<div style="position: relative; margin: auto; height: 2px; 
+	width: 1024px; background-color: #ccc; top: 113px; left:-50px;"></div>
+
+	
+	<div id="content-nav">
+		<a class="icon-left" href="Site-Direct.html">
+			<img src="images/Trafficking_Nav/sitedirect_Off.png" /><br />
+			Direct to Sites
+		</a>
+
+		<a class="icon-right" href="3rd-party.html">
+			<img src="images/Trafficking_Nav/3rdparty_Off.png" /><br />
+			Through 3rd Party Server
+		</a>
+	</div>
+	
+	<div id="content">
+		<div class="info">
+			<h2>Direct to Sites</h2>
+			<p>You provide the contacts, we send out our tags directly to the publishers and networks.</p>
+			<p><a href="#" target="new">get started now »</a></p>
+		</div>
+	
+		<div class="graphic">
+			<img src="images/sitedirect.png" />
+		</div>
+		
+		<div class="clearer"></div>
+		<div class="roundbox_trafficking" style="margin-right: 20px;">
+			<h3 id="left">Download a test tag</h3>
+			<p>Before you jump into a live ad, get comfortable with our code by downloading this test tag.</p>
+			<p><a href="#" target="new">click to download &raquo;</a></p>	
+		</div>
+		
+		
+		<div class="roundbox_trafficking">
+			<h3 id="right">Uh ... what?</h3>			
+			<p>We realize this stuff is pretty tough. Click here to reach out to our ad ops team if you have any questions.</p>
+			<p><a href="#" target="new">click to get in touch &raquo;</a></p>
+		</div>
+	</div>
+</div><!--end wrapper div-->
+
+<div id="footer">
+	blah blah blah footer footer blah
+</div>
+	
+	
+</body>
+</html>

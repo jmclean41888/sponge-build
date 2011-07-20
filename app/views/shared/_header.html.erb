@@ -9,14 +9,23 @@
 	
 	<div id="main-nav">
 	
-		<% if @current_page_category = "build" %>
-			<%= link_to image_tag("Build_Nav/Build_Over.jpg"), '#', :id => "build" %>
+		<% if @current_page_category == :build %>
+			<%= link_to image_tag("Build_Nav/Build_Over.jpg"), resize_path, :id => "build" %>
 		<% else %>
-			<%= link_to image_tag("Build_Nav/Build_Off.jpg"), '#', :id => "build" %>
+			<%= link_to image_tag("Build_Nav/Build_Off.jpg"), resize_path, :id => "build" %>
 		<% end %>
 		
-		<%= link_to image_tag("Build_Nav/Func_Off.jpg"), '#', :id => "build" %>
-		<%= link_to image_tag("Build_Nav/Live_Off.jpg"), '#', :id => "build" %>
+		<% if @current_page_category == :feature %>
+			<%= link_to image_tag("Build_Nav/Func_Over.jpg"), video_path, :id => "build" %>
+		<% else %>
+			<%= link_to image_tag("Build_Nav/Func_Off.jpg"), video_path, :id => "build" %>
+		<% end %>
+			
+		<% if @current_page_category == :trafficking %>
+			<%= link_to image_tag("Build_Nav/Live_Over.jpg"), site_direct_path, :id => "build" %>
+		<% else %>
+			<%= link_to image_tag("Build_Nav/Live_Off.jpg"), site_direct_path, :id => "build" %>
+		<% end %>
 	</div>
 	
 	<!--horizontal rule-->

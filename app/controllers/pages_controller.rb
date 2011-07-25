@@ -31,6 +31,14 @@ class PagesController < ApplicationController
   	@current_page_category = :build
   end
   
+  def we_build
+  	@current_page_category = :build
+  end
+  
+  def we_design
+  	@current_page_category = :build
+  end
+  
   def third_party
   	@current_page_category = :trafficking
   end

@@ -19,15 +19,10 @@
 		
 	<div id="feature_content_right_box" style="float:right">
 		<div id="demoads">
-			<div id="adloader">
-			</div>
+			<% @ad_id = 251894 %>
+			<% @ad_title = "Pampers" %>
 			<%= render 'shared/ad_loader' %>
 				<!--end placeholder-->
-			<div class="ad_title">
-					<h3>Title of Banner</h3>
-					<a href="#">300x250</a> •
-					<a href="#">300x250</a>
-			</div>
 		</div><!--end demo ads-->
 	</div><!--end box-->
 	<br clear="all">
@@ -52,25 +47,29 @@
 		
 	<div class="bulletbox" id="bulletbox1" style="clear:both;">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>				
-			<li>deleniti atque corrupti quos res</li>
+			<li>Your audience can opt-in to receive future messages via email and or SMS text from the banner. A great way to collect a variety of data (Email, Phone Number, Name, Address, and other information). Subscription is most effectively used when there is a strong incentive for the users to enter their information.</li>
 		</ul>
 	</div>
 		
 	<div class="bulletbox" id="bulletbox2">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>
-			<li>deleniti atque corrupti quos res</li>
+			<li>Lead Generation is most effectively used when there is a strong incentive for the audience to enter their information</li>
+			<li>Be clear on how addresses will be used. Reassure people with something like "We'll send you a monthly update and never share your information."</li>
 		</ul>
 	</div>
 		
 	<div class="bulletbox" id="bulletbox3">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>
-			<li>deleniti atque corrupti quos res</li>
+			<li>Data to be collected</li>
+			<li>Email confirmation</li>
+			<ul>
+				<li>Subject line and body copy for confirmation email</li>
+				<li>HTML formatted email can also be implemented (assets must be provided as a HTML file and should include full paths to hosted images or include images in a separate folder)</li>
+			</ul>
+			<li>Mobile Confirmation</li>
+			<ul>
+				<li>Confirmation messages-160 characters long</li>
+			</ul>
 		</ul>
 	</div>
 </div>

@@ -4,7 +4,7 @@
 	
 	<div id="feature_content_left_box" style="float:left; width:400px;">
 		<div class="feature-title" id="videotitle"></div>
-		<h1>GALLERIES</h1>
+		<h1>CAROUSELS</h1>
 		<div id="bullets">
 			<ul>
 				<li>bullet one</li>
@@ -19,15 +19,10 @@
 		
 	<div id="feature_content_right_box" style="float:right">
 		<div id="demoads">
-			<div id="adloader">
-			</div>
+			<% @ad_id = 265557%>
+			<% @ad_title = "Precise" %>
 			<%= render 'shared/ad_loader' %>
 				<!--end placeholder-->
-			<div class="ad_title">
-					<h3>Title of Banner</h3>
-					<a href="#">300x250</a> •
-					<a href="#">300x250</a>
-			</div>
 		</div><!--end demo ads-->
 	</div><!--end box-->
 	<br clear="all">
@@ -52,25 +47,29 @@
 		
 	<div class="bulletbox" id="bulletbox1" style="clear:both;">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>				
-			<li>deleniti atque corrupti quos res</li>
+			<li>The carousel is a great way to showcase products, coupons and features to users</li>
 		</ul>
 	</div>
 		
 	<div class="bulletbox" id="bulletbox2">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>
-			<li>deleniti atque corrupti quos res</li>
+			<li>It's best to highlight 3 to 5 items</li> 
+			<li>include a clear call to action to click through</li>
+			<li>prominent navigation</li>
 		</ul>
 	</div>
 		
 	<div class="bulletbox" id="bulletbox3">
 		<ul>
-			<li>At vero eos et accusamus et iusto odio dignissimos ducimus qui</li>
-			<li>ditiis praesentium voluptatu</li>
-			<li>deleniti atque corrupti quos res</li>
+			<li>Layout for each size</li> 
+			<li>For each Carousel item:</li>
+			<ul>
+				<li>Title</li>
+				<li>Description</li>
+				<li>Images re-sized to fit layout</li>
+				<li>Click through URL for each slide</li>
+			</ul>
+			<li>Deliver carousel layout as PSD, title, text and links in a spreadsheet, and images as PNGs or JPGs.</li>
 		</ul>
 	</div>
 </div>

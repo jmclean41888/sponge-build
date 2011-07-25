@@ -1,6 +1,14 @@
 <div id="ad_image_wrapper" style="width:400px;">
 	<!--placeholder-->
 	<div id="ad_box" style="width:300px; height:250px; background-color:#cccccc; float:left;">
+	<script type="text/javascript"> 
+var spongecellParams = {
+clickTag: "SPONGECELL_CLICK_TAG",
+siteId: "SPONGECELL_SITE_ID",
+placementId: "SPONGECELL_PLACEMENT_ID"
+};
+</script> 
+<script src="http://cdn.royale.spongecell.com/api/widgets/<%= @ad_id %>.js" type="text/javascript"></script>
 	</div>
 	<nav id="thumbs">
 		<div class="thumb" id="thumb1"></div>
@@ -8,4 +16,7 @@
 		<div class="thumb" id="thumb3"></div>
 		<div class="thumb" id="thumb4"></div>
 	</nav>
+	<div class="ad_title">
+		<h3><%= @ad_title %></h3>
+	</div>
 </div>

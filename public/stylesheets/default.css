@@ -8,6 +8,21 @@ yellow: #fcc75e, #fddb95, #feeece
 purple: #bb82b9, #d3afd1, #ead8ea
 */
 
+a {
+	color: #2a6aa5;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
 @font-face {
 	font-family: kievitbol;
 	src: url('../kievit_bold.otf');
@@ -174,6 +189,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.icon :hover {
+	opacity: 0.7;
+}
+
 #content-nav .resize_icon {
 	float: left;
 	margin-right: 200px;
@@ -255,18 +274,17 @@ ad_title{
 /*--roundbox stuff--*/
 
 .roundbox {
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 50px;
 	float: left;
 	clear: both; 
 	padding: 20px;
-	height: 140px;
 	background-color: #c2d1e4;
 	border-radius: 7px;
 }
 
 .roundbox_trafficking {
-	margin-top: 10px;
+	margin-top: 60px;
 	margin-bottom: 50px;
 	float: left; 
 	padding: 20px;
@@ -294,8 +312,9 @@ ad_title{
 	line-height: 18px;
 	color: #666666;
 	float:left;
-	width: 283px;
+	width: 253px;
 	margin-right: 10px;
+	padding-right: 30px;
 }
 /*end features only*/
 
@@ -304,7 +323,7 @@ ad_title{
 	margin-bottom: 50px;
 	float: left; 
 	padding: 20px;
-	height: 220px;
+	height: 200px;
 	width: 415px;
 	background-color: #c2d1e4;
 	border-radius: 7px;
@@ -386,6 +405,10 @@ font-family: georgia;
 	height: 30px;
 	width: 30px;
 	float: left;
+}
+
+.we_build {
+	height: 170px;
 }
 
 li {

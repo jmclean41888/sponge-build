@@ -1,33 +1,7 @@
 SpongeBuild::Application.routes.draw do
-  get "pages/home"
-  
-  get "pages/video"
-  get "pages/maps"
-  get "pages/social_media"
-  get "pages/coupons"
-  get "pages/galleries"
-  get "pages/lead_generation"
-  
-  get "pages/index"
-  
-  get "pages/resize"
-  
-  get "pages/third_party"
-  get "pages/site_direct"
   
   
-  
-  match '/video', :to => 'pages#video'
-  match '/maps', :to => 'pages#maps'
-  match '/social_media', :to => 'pages#social_media'
-  match '/coupons', :to => 'pages#coupons'
-  match '/galleries', :to => 'pages#galleries'
-  match '/lead_generation', :to => 'pages#lead_generation'
-  
-  match '/resize', :to => 'pages#resize'
-  
-  match '/third_party', :to => 'pages#third_party'
-  match '/site_direct', :to => 'pages#site_direct'
+  match '/:action', :controller => 'pages'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

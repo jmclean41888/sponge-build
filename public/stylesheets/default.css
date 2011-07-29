@@ -9,7 +9,7 @@ purple: #bb82b9, #d3afd1, #ead8ea
 */
 
 
-html, body {
+html, body, a, div {
   margin: 0px;
   padding: 0px;
   border: none;

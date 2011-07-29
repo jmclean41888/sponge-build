@@ -9,10 +9,10 @@ purple: #bb82b9, #d3afd1, #ead8ea
 */
 
 
-html, body, a, div {
+html, body, a, div, img {
   margin: 0px;
   padding: 0px;
-  border: none;
+  border: 0px;
 }
 
 a {

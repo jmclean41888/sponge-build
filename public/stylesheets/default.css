@@ -12,7 +12,7 @@ purple: #bb82b9, #d3afd1, #ead8ea
 html, body {
   margin: 0px;
   padding: 0px;
-  border: 0px;
+  border: none;
 }
 
 a {
@@ -163,12 +163,16 @@ body {
 	clear: both;
 }
 
-#content-nav .feature_nav_icon .icon {
+.feature-nav .icon {
 	float: left;
 	margin-right: 50px;
 	margin-top: -10px;
 	margin-bottom: 10px;
 	border: none;
+}
+
+.icon {
+	float:left;
 }
 
 .icon :hover {

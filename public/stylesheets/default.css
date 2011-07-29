@@ -8,6 +8,8 @@ yellow: #fcc75e, #fddb95, #feeece
 purple: #bb82b9, #d3afd1, #ead8ea
 */
 
+
+
 a {
 	color: #2a6aa5;
 	text-decoration: none;
@@ -169,24 +171,27 @@ h3 {
 #content-nav .icon-left {
 	float: left;
 	margin-left: 200px;
-	padding: 0px 0px 25px 0px;
+	margin-top: -10px;
+	margin-bottom: 10px;
 }
 
 #content-nav .icon-right {
 	float: right;
 	margin-right: 200px;
-	padding: 0px 0px 25px 0px;
+	margin-top: -10px;
+	margin-bottom: 10px;
 }
+
 	
 .clearer {
 	clear: both;
 }
 
-#content-nav .icon {
+#content-nav .feature_nav_icon .icon {
 	float: left;
-	margin-right: 100px;
+	margin-right: 50px;
 	margin-top: -10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .icon :hover {
@@ -234,6 +239,10 @@ h2 {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 10pt;
 	color: #666
+}
+
+#feature_content_left_box {
+	margin-left: 75px;
 }
 
 #bullets{
@@ -393,12 +402,12 @@ font-family: georgia;
 
 .roundbox_trafficking h3#left {
 	padding: 10px 0px 5px 40px;
-	background: url('../images/icons/Assets_Icon.png') 0 0 no-repeat;
+	background: url('../images/icons/assets_icon.png') 0 0 no-repeat;
 }
 
 .roundbox_trafficking h3#right {
 	padding: 10px 0px 5px 40px;
-	background: url('../images/icons/Know_Icon.png') 0 0 no-repeat;
+	background: url('../images/icons/need_to_know_icon.png') 0 0 no-repeat;
 }
 
 .roundbox_icon {

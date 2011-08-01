@@ -2,6 +2,8 @@ SpongeBuild::Application.routes.draw do
   
   
   match '/:action', :controller => 'pages'
+  
+  root :to => 'pages#resize'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

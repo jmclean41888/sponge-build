@@ -116,7 +116,6 @@ body {
 
 #main-nav a {
 	padding: 0px;
-	float: right;
 }
 
 #main-nav img {
@@ -451,6 +450,7 @@ li {
 	color: #666666;
 	font-family: Georgia;
 	font-style: italic;
+	text-align: center;
 }
 
 #footer a {

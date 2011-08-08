@@ -4,7 +4,6 @@
 		<a href="http://gallery.spongecell.com">GALLERY</a>&nbsp;
 		<a href="http://www.spongecell.com/about">ABOUT</a>&nbsp;
 		<a class="selected" href="index.html">BUILD</a>&nbsp;
-		<a href="http://www.spongecell.com/contact.html">CONNECT</a>
 	</div>
 	<br clear="all" />
 	
@@ -15,19 +14,19 @@
 	<div id="main-nav">
 	
 		<% if @current_page_category == :build %>
-			<%= link_to image_tag("Build_Nav/Build_Over.jpg"), "/resize", :id => "build" %>
+			<%= link_to image_tag("Build_Nav/Build_Over.jpg"), "/resize", :id => "build", :mouseover => "Build_Nav/Build_Off.jpg" %>
 		<% else %>
 			<%= link_to image_tag("Build_Nav/Build_Off.jpg"), "/resize", :id => "build" %>
 		<% end %>
 		
 		<% if @current_page_category == :feature %>
-			<%= link_to image_tag("Build_Nav/Func_Over.jpg"), "/video", :id => "build" %>
+			<%= link_to image_tag("Build_Nav/Func_Over.jpg"), "/video", :id => "build", :mouseover => "Build_Nav/Func_Off.jpg" %>
 		<% else %>
 			<%= link_to image_tag("Build_Nav/Func_Off.jpg"), "/video", :id => "build" %>
 		<% end %>
 			
 		<% if @current_page_category == :trafficking %>
-			<%= link_to image_tag("Build_Nav/Live_Over.jpg"), "/site_direct", :id => "build" %>
+			<%= link_to image_tag("Build_Nav/Live_Over.jpg"), "/site_direct", :id => "build", :mouseover => "Build_Nav/Live_Off.jpg"  %>
 		<% else %>
 			<%= link_to image_tag("Build_Nav/Live_Off.jpg"), "/site_direct", :id => "build" %>
 		<% end %>

@@ -1,17 +1,16 @@
 <div id="content-nav" class="feature-nav">
-
 	
-	<%= link_to image_tag("features_navigation/video_off.jpg"), "/video", :class => 'icon' %>
+	<%= link_to image_tag("features_navigation/video_off.jpg"), "/video", :class => is_active?('video')%>
 
-	<%= link_to image_tag("features_navigation/maps_off.jpg"),"/maps", :class => 'icon' %>
+	<%= link_to image_tag("features_navigation/maps_off.jpg"),"/maps", :class => is_active?('maps')%>
 
-	<%= link_to image_tag("features_navigation/feeds_off.jpg"), "/social_media", :class => 'icon' %>
+	<%= link_to image_tag("features_navigation/feeds_off.jpg"), "/social_media", :class => is_active?('social_media')%>
 
-	<%= link_to image_tag("features_navigation/coupons_off.jpg"), "/coupons", :class => 'icon' %>
+	<%= link_to image_tag("features_navigation/coupons_off.jpg"), "/coupons", :class => is_active?('coupons')%>
 
-	<%= link_to image_tag("features_navigation/galleries_off.jpg"), "/galleries", :class=> 'icon' %>
+	<%= link_to image_tag("features_navigation/galleries_off.jpg"), "/galleries", :class => is_active?('galleries')%>
 
-	<%= link_to image_tag("features_navigation/lead_generation_off.jpg"), "/lead_generation", :class => 'icon', :style => "margin-right: 0px;" %>
+	<%= link_to image_tag("features_navigation/lead_generation_off.jpg"), "/lead_generation", :class => is_active?('lead_generation'), :style => "margin-right: 0px" %>
 
 </div>
 	

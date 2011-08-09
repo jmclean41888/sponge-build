@@ -8,6 +8,9 @@ yellow: #fcc75e, #fddb95, #feeece
 purple: #bb82b9, #d3afd1, #ead8ea
 */
 
+.active img {
+	border-bottom: 4px solid #bb82b9;
+}
 
 html, body, a, div, img {
   margin: 0px;
@@ -163,12 +166,16 @@ body {
 	clear: both;
 }
 
-.feature-nav .icon {
+.feature-nav a {
 	float: left;
 	margin-right: 50px;
 	margin-top: -10px;
 	margin-bottom: 10px;
 	border: none;
+}
+
+.feature-nav a :hover {
+	opacity: 0.7;
 }
 
 .icon {

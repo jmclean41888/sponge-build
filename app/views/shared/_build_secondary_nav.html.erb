@@ -1,9 +1,9 @@
 <div id="content-nav">
 
-<%= link_to image_tag("creative_navigation/resize_off.png"), '/resize', :class=> "resize_icon icon"%>
-<%= link_to image_tag("creative_navigation/agency_off.png"), '/we_build', :class=> "resize_icon icon"%>
+<%= link_to image_tag("creative_navigation/resize_off.png"), '/resize', :class=> "resize_icon icon", :class => (is_active?('resize') + 'resize_icon icon')%>
+<%= link_to image_tag("creative_navigation/agency_off.png"), '/we_build', :class=> "resize_icon icon", :class => (is_active?('we_build') + 'resize_icon icon')%>
 <%= link_to image_tag("creative_navigation/spongecell_off.png"), '/we_design', 
-	:class=> "resize_icon icon", :style=>"margin-right: 0px;"%>
+	:class=> "resize_icon icon", :style=>"margin-right: 0px;", :class => (is_active?('we_design') + 'resize_icon icon')%>
 		
 </div>
 	

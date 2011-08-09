@@ -1,7 +1,7 @@
 <div id="content-nav">
 
-<%= link_to image_tag("trafficking_navigation/site_direct_off.png"), "/site_direct", :class => "icon-left icon" %>
+<%= link_to image_tag("trafficking_navigation/site_direct_off.png"), "/site_direct", :class => (is_active?('site_direct') + 'icon-left icon') %>
 
-<%= link_to image_tag("trafficking_navigation/third_party_off.png"), "/third_party", :class => "icon-right icon" %>
+<%= link_to image_tag("trafficking_navigation/third_party_off.png"), "/third_party", :class => (is_active?('third_party') + 'icon-right icon') %>
 
 </div>
